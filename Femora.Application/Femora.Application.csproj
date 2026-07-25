@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Common\Interfaces\Repositories\**" />
+    <EmbeddedResource Remove="Common\Interfaces\Repositories\**" />
+    <None Remove="Common\Interfaces\Repositories\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Common\Interfaces\Repositories\LMS\ICourseRepository.cs" />
+    <Compile Include="Common\Interfaces\Repositories\LMS\IEnrollmentModuleRepository.cs" />
+    <Compile Include="Common\Interfaces\Repositories\LMS\IEnrollmentRepository.cs" />
+    <Compile Include="Common\Interfaces\Repositories\LMS\IModuleRepository.cs" />
+    <Compile Include="Common\Interfaces\Repositories\LMS\IQuizRepository.cs" />
+    <Compile Include="Common\Interfaces\Repositories\MarketPlace\ICartRepository.cs" />
+    <Compile Include="Common\Interfaces\Repositories\MarketPlace\IOrderRepository.cs" />
+    <Compile Include="Common\Interfaces\Repositories\AI\*" />
+    <Compile Include="Common\Interfaces\Repositories\Email\IEmailRepository.cs" />
+    <Compile Include="Common\Interfaces\Repositories\ExternalAuth\IExternalAuthRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Femora.Domain\Femora.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\LMS\Assignments\Commands\" />
+    <Folder Include="Features\LMS\Assignments\DTOs\" />
+    <Folder Include="Features\LMS\Assignments\Validators\" />
+    <Folder Include="Features\LMS\Assignments\Queries\" />
+    <Folder Include="Features\LMS\Categories\Commands\" />
+    <Folder Include="Features\LMS\Categories\DTOs\" />
+    <Folder Include="Features\LMS\Categories\Validators\" />
+    <Folder Include="Features\LMS\Categories\Queries\" />
+    <Folder Include="Features\LMS\Certificates\Commands\" />
+    <Folder Include="Features\LMS\Certificates\DTOs\" />
+    <Folder Include="Features\LMS\Certificates\Validators\" />
+    <Folder Include="Features\LMS\Certificates\Queries\" />
+    <Folder Include="Features\LMS\Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
+    <PackageReference Include="MediatR" Version="14.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.17" />
+  </ItemGroup>
+
+</Project>
