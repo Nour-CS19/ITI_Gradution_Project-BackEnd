@@ -2,7 +2,7 @@ namespace Femora.Infrastructure.Options;
 
 public class AzureOpenAIOptions
 {
-    public const string SectionName = "AzureOpenAI";
+    public const string SectionName = "OpenAI";
     public string Endpoint { get; set; } = string.Empty;
     public string ApiKey { get; set; } = string.Empty;
     public string ChatDeploymentName { get; set; } = string.Empty;

@@ -8,7 +8,7 @@ namespace Femora.Infrastructure.Options;
 
 public class AzureBlobStorageOptions
 {
-    public const string SectionName = "AzureBlobStorage";
+    public const string SectionName = "BlobStorage";
 
     public string ConnectionString { get; set; } = string.Empty;
 

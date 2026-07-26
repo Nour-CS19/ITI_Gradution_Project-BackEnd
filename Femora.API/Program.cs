@@ -247,6 +247,9 @@ namespace Femora.API
             });
             app.MapOpenApi();
 
+            // Redirect the root URL straight to the Swagger UI.
+            app.MapGet("/", () => Results.Redirect("/swagger"));
+
             app.UseExceptionHandler();
             app.UseResponseCompression();
             app.UseHttpsRedirection();

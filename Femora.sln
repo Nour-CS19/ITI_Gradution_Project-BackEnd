@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.37301.10
+# Visual Studio Version 18
+VisualStudioVersion = 18.9.12009.208 insiders
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Femora.API", "Femora.API\Femora.API.csproj", "{A214E68B-EE55-42C0-865B-3D20754C7F24}"
 EndProject
